@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-twingate",
+  "name": "@jaylouisw/n8n-nodes-twingate",
   "version": "0.1.0",
   "description": "n8n node for Twingate Zero Trust Network Access",
   "keywords": [
@@ -11,29 +11,25 @@
     "security"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/your-org/n8n-nodes-twingate",
+  "homepage": "https://github.com/Jaylouisw/n8n-nodes-twingate",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Jaylouisw"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/n8n-nodes-twingate.git"
+    "url": "https://github.com/Jaylouisw/n8n-nodes-twingate.git"
   },
   "engines": {
-    "node": ">=18.10",
-    "pnpm": ">=9.1"
+    "node": ">=18.10"
   },
-  "packageManager": "pnpm@9.1.4",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist"

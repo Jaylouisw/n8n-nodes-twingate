@@ -14,14 +14,14 @@ This is an n8n community node that integrates with [Twingate](https://www.twinga
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
 ```bash
-npm install n8n-nodes-twingate
+npm install @jaylouisw/n8n-nodes-twingate
 ```
 
 Or install directly in n8n:
 
 1. Go to **Settings > Community Nodes**
 2. Select **Install**
-3. Enter `n8n-nodes-twingate` and confirm
+3. Enter `@jaylouisw/n8n-nodes-twingate` and confirm
 
 ## Operations
 
